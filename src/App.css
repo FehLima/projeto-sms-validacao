@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.pagina-pontos {
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4a4a4a 0%, #21262c 45%, #111111 100%);
+  padding: 24px 24px 90px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .logo-espaco { 
+  height: 78px; 
+  width: auto; 
+  object-fit: contain; 
+}
+
+.badge-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.badge-dash {
+  width: 22px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #f4e10c;
+}
+
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.divisor {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 20px 0 28px;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 1.15;
+  margin: 0 0 12px;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 320px;
+}
+
+.area-card {
+  margin-top: -60px;
+  padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-consulta {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 24px;
+  padding: 32px 24px 24px;
+  box-shadow: 0 20px 40px rgba(15, 40, 80, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.barra-destaque {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  border-radius: 0 0 4px 4px;
+  background: linear-gradient(90deg, #f0b905, #f0b905);
+}
+
+.card-consulta label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #252525;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.card-consulta label:first-of-type {
+  margin-top: 8px;
+}
+
+.card-consulta input {
+  padding: 14px 16px;
+  border: 1px solid #e2e6ec;
+  background-color: #f6f8fb;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  color: #1a1a1a;
+}
+
+.card-consulta input::placeholder {
+  color: #a7b0bd;
+}
+
+.card-consulta input:focus {
+  border-color: #2f7fc4;
+  box-shadow: 0 0 0 3px rgba(47, 127, 196, 0.15);
+}
+
+.linha-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f8fb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-top: 24px;
+}
+
+.linha-toggle span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.toggle {
+  width: 48px;
+  height: 26px;
+  border-radius: 999px;
+  border: none;
+  background-color: #d7dce3;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+.toggle.ativo {
+  background-color: #d4ab05;
+}
+
+.toggle-bolinha {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle.ativo .toggle-bolinha {
+  transform: translateX(22px);
+}
+
+.botao-consultar {
+  margin-top: 28px;
+  padding: 15px;
+  background-color: #e8b40a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.botao-consultar:hover {
+  background-color: #d7b104;
+}
+
+.icone-seta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+}
+
+.ambiente-seguro {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #8a94a3;
+}
+
+.botao-voltar {
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #6e6e6d;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.botao-voltar:hover {
+  background-color: #4a4a4a;
+}
+

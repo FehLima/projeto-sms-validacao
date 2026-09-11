@@ -1,0 +1,133 @@
+.admin-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #16305c;
+  padding: 20px;
+}
+
+.admin-login-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 36px 30px;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.admin-login-card h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  color: #16305c;
+}
+
+.admin-login-card label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #16305c;
+}
+
+.admin-login-card input {
+  padding: 12px;
+  border: 1px solid #d7dce3;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.admin-login-card button {
+  padding: 12px;
+  background-color: #2f7fc4;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-erro {
+  color: #c0392b;
+  font-size: 13px;
+  margin: 4px 0 12px;
+}
+
+.admin-container {
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  padding: 32px 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.admin-header h2 {
+  color: #16305c;
+  margin: 0;
+}
+
+.admin-botao-secundario {
+  padding: 10px 16px;
+  border: 1px solid #d7dce3;
+  background-color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.admin-botao-secundario:hover {
+  background-color: #eef2f7;
+}
+
+.admin-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 40, 80, 0.08);
+}
+
+.admin-tabela th {
+  text-align: left;
+  padding: 14px 16px;
+  background-color: #16305c;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+.admin-tabela td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #eef1f5;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.admin-status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.admin-status.validado {
+  background-color: #dcf5e3;
+  color: #1e7d3a;
+}
+
+.admin-status.pendente {
+  background-color: #fdeee0;
+  color: #b0640f;
+}
