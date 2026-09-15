@@ -1,6 +1,7 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const rateLimit = require('express-rate-limit');
 const router = express.Router();
 
 const caminhoLeads = path.join(__dirname, '..', 'data', 'leads.json');
@@ -16,6 +17,16 @@ function lerLeads() {
 function salvarLeads(leads) {
   fs.writeFileSync(caminhoLeads, JSON.stringify(leads, null, 2));
 }
+
+// Limita tentativas de login: no máximo 5 por IP a cada 15 minutos
+const limitadorLogin = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutos
+  max: 5,
+  message: { sucesso: false, mensagem: 'Muitas tentativas. Tente novamente em 15 minutos.' },
+  standardHeaders: true,
+  legacyHeaders: false,
+  skipSuccessfulRequests: true, // login certo não conta pro limite
+});
 
 router.post('/login', (req, res) => {
   const { senha } = req.body;
