@@ -5,8 +5,6 @@
 /.pnp
 .pnp.js
 .env
-leads.json
-.leads.json
 
 # testing
 node_modules\nbackend/node_modules\n.env\nbackend/.env\nbuild
