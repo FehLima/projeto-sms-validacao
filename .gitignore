@@ -6,7 +6,6 @@
 .pnp.js
 .env
 leads.json
-backend/data/leads.json
 .leads.json
 
 # testing
