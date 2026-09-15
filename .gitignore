@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+.env
 
 # testing
 node_modules\nbackend/node_modules\n.env\nbackend/.env\nbuild
