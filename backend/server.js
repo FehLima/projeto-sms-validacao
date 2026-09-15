@@ -6,6 +6,7 @@ const validacaoRoutes = require('./routes/validacao');
 const { router: leadsRoutes } = require('./routes/leads');
 
 const app = express();
+app.set('trust proxy', 1); // <- linha nova: necessário no Render pra identificar o IP real
 app.use(cors());
 app.use(express.json());
 
